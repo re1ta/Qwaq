@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница пользователя</title>
+    <link rel="stylesheet" th:href="@{/css/user page.css}">
+    <link rel="preconnect"th:href="@{https://fonts.googleapis.com}">
+    <link th:href="@{/css/assets/fonts/cera_pro/stylesheet.css}" rel = "stylesheet">
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap}" rel="stylesheet}">
+  </head>
+  <body>
+    <aside>
+      <a th:href ="@{http://localhost:8080/}" class="logo">
+        <img th:src="@{/css/assets/images/logo.svg}" alt="">
+        <span>QwaQ</span>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <button>
+              <img th:src="@{/css/assets/images/house icon.svg}" alt="">
+              <span>Мой профиль</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <img th:src="@{/css/assets/images/test icon.svg}" alt="">
+              <span>Тесты</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <img th:src="@{/css/assets/images/chess figures icon.svg}" alt="">
+              <span>Игры</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <img th:src="@{/css/assets/images/create test icon.svg}" alt="">
+              <span>Создать тест</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <img th:src="@{/css/assets/images/services icon.svg}" alt="">
+              <span>Сервисы</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <form th:action="@{/logout}" method="post">
+        <button class = "log-out">Выйти</button>
+      </form>
+    </aside>
+    <header>...</header>
+  </body>
+</html>

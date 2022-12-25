@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+<head>
+  <meta charset="utf-8">
+  <title>Регистрация</title>
+  <link rel="stylesheet" th:href="@{/css/authorization.css}">
+  <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+  <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+  <link th:href ="@{https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap}" rel="stylesheet">
+  <link th:href = "@{/css/assets/fonts/cera_pro/stylesheet.css}" rel = "stylesheet">
+</head>
+<body>
+<a th:href ="@{http://localhost:8080/}" class="link-to-main-page">
+  <img th:src="@{/css/assets/images/logo.svg}" alt="Лого QwaQ">
+  <span>QwaQ</span>
+</a>
+
+<div class="form">
+  <h1>Регистрация</h1>
+  <form th:action="@{/registration}" method="post">
+    <fieldset>
+
+      <div class="e-mail-field">
+        <label for="">Ваш e-mail</label>
+        <input type="text" name="username"/>
+      </div>
+
+      <div class="personName-field">
+        <label for="">Ваше имя</label>
+        <input type="text" name="personName"/>
+      </div>
+
+      <div class="personSurname-field">
+        <label for="">Ваша фамилия</label>
+        <input type="text" name="personSurname"/>
+      </div>
+
+      <div class="password-field">
+        <label for="">Ваш пароль</label>
+        <input type="password" name="password"/>
+      </div>
+
+    </fieldset>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+</div>
+</body>
+</html>

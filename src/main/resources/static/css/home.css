@@ -1,0 +1,451 @@
+@font-face {
+	font-family: "Bauhaus";
+	src: url("../fonts/bauhaus/bauhaus.eot"); 
+	src: url("../fonts/bauhaus/bauhaus.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/bauhaus/bauhaus.otf") format("opentype"), 
+		url("../fonts/bauhaus/bauhaus.svg") format("svg"), 
+		url("../fonts/bauhaus/bauhaus.ttf") format("truetype"), 
+		url("../fonts/bauhaus/bauhaus.woff") format("woff"), 
+		url("../fonts/bauhaus/bauhaus.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background: #F1F7FF;
+    width: 1920px;
+}
+
+header {
+    display: flex;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1166px;
+}
+
+header .main {
+    text-decoration: none;
+}
+
+header img {
+    left: -46px;
+    margin-top: 18px;
+    position: relative;
+}
+
+header .logo-text {
+    color: #181C44;
+    font-family: 'Bauhaus 93';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    left: -89px;
+    line-height: 80px;
+    top: -38px;
+    position: relative;
+}
+
+header nav a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+header nav .services {
+    color: #181C44;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    margin-top: 56px;
+}
+
+header nav .about-us {
+    color: #181C44;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    margin-left: 84.5px;
+    margin-top: 56px;
+}
+
+header nav .log-in {
+    width: 142px;
+    height: 45px;
+    padding: 6px 39px 11px 36px;
+    text-align: center;
+    border: 4px solid #181C44;;
+    filter: drop-shadow(0px 4px 4px rgba(162, 192, 55, 0.25));
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181C44;
+    margin-left: 142.5px;
+}
+
+header nav .registration {
+    color: #181C44;
+    width: 215px;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 6px 39px 11px 36px;
+    text-align: center;
+    background: #181C44;
+    border: 5px solid #181C44;;
+    box-shadow: 0px 4px 5px rgba(162, 192, 55, 0.25);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-left: 35px;
+}
+
+.preview {
+    margin: 160px 310px 242px 310px;
+}
+
+.test-sections {
+    margin: auto 80px;
+}
+
+.test-section {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #014394;
+    border: 2px solid #BCE903;
+    box-shadow: inset 4px 4px 4px rgba(188, 233, 3, 0.25), inset -4px -4px 4px rgba(188, 233, 3, 0.25);
+    width: 33%;
+    height: 76px;
+    padding-top: 23px;
+}
+
+.test-section-1 {
+    background: #BCE903;
+    box-shadow: inset -5px 5px 2px rgba(177, 220, 28, 0.05), inset -15px 15px 30px rgba(177, 220, 28, 0.08), inset -50px 50px 80px rgba(177, 220, 28, 0.15);
+    border-radius: 5px;
+}
+
+.test-section-2 {
+    background: #FFFFFF;
+}
+
+.test-section-3 {
+    background: #FFFFFF;
+}
+
+.demonstrations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 90px 220px 0 250px;
+    grid-column-gap: 286xp;
+    grid-row-gap: 140px;
+}
+
+.demonstration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.demonstration .demo-img {
+    border: 10px solid #A2C037BF;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    width: 630px;
+    height: 320px;
+    justify-self: end;
+}
+
+.demonstration .org {
+    color: #181C44;
+    position: relative;
+    display: inline-block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 70px;
+    vertical-align: top;
+}
+
+.demonstration .add-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    color: #181C44;
+    margin-top: 5px;
+}
+
+.demonstration-2 .add-text {
+    margin-top: 50px;
+}
+
+.demonstration-1 .alt {
+    color: orange;
+}
+
+.demonstration-2 .alt {
+    color: #BCE903;
+}
+
+.demonstration-3 .alt {
+    color: #1F83FD;
+}
+
+.tests {
+    margin-top: 120px;
+    background-color: #181C44;
+    padding-top: 64px;
+}
+
+.tests-information {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.tests-information li {
+    width: 300px;
+}
+
+.tests-information li div img {
+    margin: 0 auto;
+}
+
+.tests-information li div h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 65px;
+}
+
+.tests-information li div p {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 130px;
+}
+
+.tests-information li div h3 span {
+    color: #FCA311;
+}
+
+.tests-text {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-left: 227px;
+}
+
+.tests-text span {
+    color: orange;
+}
+
+.about-team {
+    margin-top: 223px;
+    margin-bottom: 196px;
+}
+
+.about-team h2 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 59px;
+    color: #181C44;
+    margin-left: 231px;
+}
+
+.about-team ul li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-team ul li p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.about-team ul li img {
+    margin-top: 30px;
+}
+
+.about-team ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    margin-top: 230px;
+}
+
+.role {
+    color: #1F83FD;
+}
+
+footer {
+    border-top: 8px solid #BCE903;
+    height: 162px;
+}
+
+footer img {
+    display: inline-block;
+    margin-left: 191px;
+    position: relative;
+}
+
+footer .logo-text{
+    font-family: 'Bauhaus 93';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    position: relative;
+    top: -35px;
+    left: -46px;
+    color: #181C44;
+    margin-right: 477px;
+}
+
+footer a {
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    bottom: 40px;
+    color: #014394;
+    margin-right: 303px;
+}

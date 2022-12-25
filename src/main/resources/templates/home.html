@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Qwaq</title>
+  <link rel="stylesheet" th:href="@{/css/home.css}"/>
+  <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+  <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+  <link th:href="@{https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap}" rel="stylesheet">
+  <link th:href="@{/css/assets/fonts/cera_pro/stylesheet.css}" rel = "stylesheet">
+</head>
+<body>
+<header>
+  <a th:href="@{index.html}" class="main">
+    <img th:src="@{/css/assets/images/logo.svg}">
+    <span class="logo-text">QwaQ</span>
+  </a>
+  <nav>
+    <a href="" class="services">Сервисы</a>
+    <a href="" class="about-us">О нас</a>
+    <a th:href="@{/login}" class="log-in">Войти</a>
+    <a th:href="@{/registration}" class="registration">
+      <span class="registration-text">Регистрация</span>
+    </a>
+  </nav>
+</header>
+<main>
+  <img th:src="@{/css/assets/images/preview.png}" alt="Превью" class="preview">
+  <section>
+    <div class="test-sections">
+      <div class="test-section test-section-1">Создание тестов в пару кликов</div>
+      <div class="test-section test-section-2">Увлекательные мини-игры</div>
+      <div class="test-section test-section-3">Система отчетов</div>
+    </div>
+    <div class="demonstrations">
+      <div class="demonstration demonstration-1">
+            <span class="org">Создание тестов<br>
+              <span class="alt">в пару кликов</span>
+              <img th:src="@{/css/assets/icons/underline_wave.svg}" alt="">
+            <p class="add-text">
+              В сервисе вы сможете создать тест по любой теме, передать код ученикам и получить статистику ответов.
+            </p></span>
+        <img class="demo-img" th:src="@{/css/assets/images/demo_img_1.jpg}" alt="">
+      </div>
+      <div class="demonstration demonstration-2">
+            <span class="org"><span class="alt">Увлекательные</span><br>
+              мини-игры
+              <p class="add-text">
+                Закрепить материал по пройденной теме можно с помощью образовательных игр.
+                Тренировка счета в уме и карточки с теорией помогут подготовиться не только к урокам, но и экзаменам.
+              </p></span>
+        <img class="demo-img"th:src="@{/css/assets/images/demo_img_2.jpg}" alt="">
+      </div>
+      <div class="demonstration demonstration-3">
+            <span class="org"><span class="alt">Система отчетов</span>
+            <img th:src="@{/css/assets/icons/underline_rope.svg}" alt="">
+            <p class="add-text">
+              Преподаватель получит подробный отчет о результатах тестирования,
+              а ученик увидит результаты в общем рейтинге.
+            </p></span>
+        <img class="demo-img" th:src="@{/css/assets/images/demo_img_3.jpg}" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="tests">
+    <h2 class="tests-text">Закрепляй полученные знание <span>с нашими<br> увлекательными тестами</span></h2>
+    <ul class="tests-information">
+      <li class="test-1">
+        <div>
+          <img th:src="@{/css/assets/icons/calculator.svg}" alt="">
+          <h3>Игра &laquo<span>Посчитай-ка!</span>&raquo</h3>
+          <p>Тренажер быстрого счета в уме. Посчитай как можно больше примеров за одну минуту</p>
+        </div>
+      </li>
+      <li class="test-2">
+        <div>
+          <img th:src="@{/css/assets/icons/robot.svg}" alt="">
+          <h3><span>Учим формулы</span></h3>
+          <p>Карточки с формулами по физике, математике и информатике</p>
+        </div>
+      </li>
+      <li class="test-3">
+        <div>
+          <img th:src="@{/css/assets/icons/sms.svg}" alt="">
+          <h3>Игра &laquo<span>English quest</span>&raquo</h3>
+          <p>Помоги детективу разрешить таинственные случаи и объяснить полиции версию произошедшего</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="about-team">
+    <h2>Команда разработчиков</h2>
+    <ul>
+      <li class="team-member team-member-1">
+        <p><br></p>
+        <p class="role role-1">Аналитик</p>
+        <img th:src="@{/css/assets/images/analyst.png}" alt="">
+        <p><br></p>
+        <p class="name name-1">Корелина Даша</p>
+      </li>
+      <li class="team-member team-member-2">
+        <p class="role role-2">Бэкенд<br>программист</p>
+        <img th:src="@{/css/assets/images/backend.png}" alt="">
+        <p><br></p>
+        <p class="name name-2">Ибатов Эрнест</p>
+      </li>
+      <li class="team-member team-member-3">
+        <p><br></p>
+        <p class="role role-3">Дизайнер</p>
+        <img th:src="@{/css/assets/images/designer.png}" alt="">
+        <p><br></p>
+        <p class="name name-3">Казуров Егор</p>
+      </li>
+      <li class="team-member team-member-4">
+        <p class="role role-4">Фронтенд<br>программист</p>
+        <img th:src="@{/css/assets/images/fronend.png}" alt="">
+        <p><br></p>
+        <p class="name name-4">Ренёв Глеб</p>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <img th:src="@{/css/assets/images/logo.svg}">
+  <span class="logo-text">QwaQ</span>
+  <a href="">О продукте</a>
+  <a href="">Контакты</a>
+</footer>
+</body>
+</html>

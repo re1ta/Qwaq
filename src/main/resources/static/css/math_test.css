@@ -1,0 +1,191 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #57A2FE;
+}
+
+header {
+    text-align: right;
+}
+
+.question-counter {
+    color: #FFFFFF;
+    display: inline-block;
+    background: #181C44;
+    box-shadow: 40px 40px 104px rgba(31, 71, 131, 0.13), 30px 30px 60px rgba(31, 71, 131, 0.11), 18px 18px 35px rgba(31, 71, 131, 0.08), 10px 10px 20px rgba(31, 71, 131, 0.06), 4px 4px 9px rgba(31, 71, 131, 0.03), 1px 1px 5px rgba(31, 71, 131, 0.01);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 0px;
+    letter-spacing: 0.1em;
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 25px;
+}
+
+.finish {
+    color: #FFFFFF;
+    display: inline-block;
+    background: red;
+    box-shadow: 40px 40px 104px rgba(31, 71, 131, 0.13), 30px 30px 60px rgba(31, 71, 131, 0.11), 18px 18px 35px rgba(31, 71, 131, 0.08), 10px 10px 20px rgba(31, 71, 131, 0.06), 4px 4px 9px rgba(31, 71, 131, 0.03), 1px 1px 5px rgba(31, 71, 131, 0.01);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 0px;
+    letter-spacing: 0.1em;
+    margin-top: 50px;
+    margin-right: 160px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 25px;
+}
+
+.question {
+    background: #FFFFFF;
+    border: 10px solid #014394;
+    box-shadow: 40px 40px 104px rgba(31, 71, 131, 0.13), 30px 30px 60px rgba(31, 71, 131, 0.11), 18px 18px 35px rgba(31, 71, 131, 0.08), 10px 10px 20px rgba(31, 71, 131, 0.06), 4px 4px 9px rgba(31, 71, 131, 0.03), 1px 1px 5px rgba(31, 71, 131, 0.01);
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 118%;
+    text-align: center;
+    color: #181C44;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 142px 0 142px 0;
+}
+
+.answers-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    margin: 75px 310px;
+}
+
+.answer {
+    background: #FFFFFF;
+    border: 10px solid #014394;
+    box-shadow: 40px 40px 104px rgba(31, 71, 131, 0.13), 30px 30px 60px rgba(31, 71, 131, 0.11), 18px 18px 35px rgba(31, 71, 131, 0.08), 10px 10px 20px rgba(31, 71, 131, 0.06), 4px 4px 9px rgba(31, 71, 131, 0.03), 1px 1px 5px rgba(31, 71, 131, 0.01);
+    border-radius: 20px;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 118%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #181C44;
+    justify-content: center;
+    padding: 75px 135px;
+}
