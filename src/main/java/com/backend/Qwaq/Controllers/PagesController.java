@@ -21,4 +21,9 @@ public class PagesController {
         return "user page";
     }
 
+    @GetMapping("/math_test")
+    public String math_test(){
+        return "math_test";
+    }
+
 }

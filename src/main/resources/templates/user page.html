@@ -12,7 +12,7 @@
   </head>
   <body>
     <aside>
-      <a th:href ="@{http://localhost:8080/}" class="logo">
+      <a th:href ="@{http://localhost:8080/math_test}" class="logo">
         <img th:src="@{/css/assets/images/logo.svg}" alt="">
         <span>QwaQ</span>
       </a>
@@ -20,39 +20,39 @@
         <ul>
           <li>
             <button>
-              <img th:src="@{/css/assets/images/house icon.svg}" alt="">
+              <img th:src="@{/css/assets/icons/house.svg}" alt="">
               <span>Мой профиль</span>
             </button>
           </li>
           <li>
             <button>
-              <img th:src="@{/css/assets/images/test icon.svg}" alt="">
+              <img th:src="@{/css/assets/icons/test.svg}" alt="">
               <span>Тесты</span>
             </button>
           </li>
           <li>
             <button>
-              <img th:src="@{/css/assets/images/chess figures icon.svg}" alt="">
+              <img th:src="@{/css/assets/icons/chess_figures.svg}" alt="">
               <span>Игры</span>
             </button>
           </li>
           <li>
             <button>
-              <img th:src="@{/css/assets/images/create test icon.svg}" alt="">
+              <img th:src="@{/css/assets/icons/create_test.svg}" alt="">
               <span>Создать тест</span>
             </button>
           </li>
           <li>
             <button>
-              <img th:src="@{/css/assets/images/services icon.svg}" alt="">
+              <img th:src="@{/css/assets/icons/services.svg}" alt="">
               <span>Сервисы</span>
             </button>
           </li>
         </ul>
+        <form th:action="@{/logout}" method="post">
+          <button class = "log-out">Выйти</button>
+        </form>
       </nav>
-      <form th:action="@{/logout}" method="post">
-        <button class = "log-out">Выйти</button>
-      </form>
     </aside>
     <header>...</header>
   </body>
